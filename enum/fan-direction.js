@@ -18,7 +18,7 @@ FanDirection.enum.STEP_5 = new FanDirection(5, 'STEP_5');
 FanDirection.find = function(id) {
 	let map = FanDirection.enum;
 	for (let key in map) {
-		if (map[key].id === id) {
+		if (map.hasOwnProperty(key) && map[key].id === id) {
 			return map[key];
 		}
 	}

@@ -15,7 +15,7 @@ OutDoorRunCond.enum.VENT = new OutDoorRunCond(0, 'VENT');
 OutDoorRunCond.find = function(id) {
 	let map = OutDoorRunCond.enum;
 	for (let key in map) {
-		if (map[key].id === id) {
+		if (map.hasOwnProperty(key) && map[key].id === id) {
 			return map[key];
 		}
 	}

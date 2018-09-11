@@ -22,13 +22,13 @@ Device.find = function(type, id) {
   let map = Device.enum;
     if (id === undefined) {
         for (let key in map) {
-            if (map[key].id === type) {
+            if (map.hasOwnProperty(key) && map[key].id === type) {
                 return map[key];
             }
         }
     } else {
         for (let key in map) {
-            if (map[key].type === type && map[key].id === id) {
+            if (map.hasOwnProperty(key) && map[key].type === type && map[key].id === id) {
                 return map[key];
             }
         }

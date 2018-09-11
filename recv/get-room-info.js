@@ -1,4 +1,4 @@
-const Result = require('./result');
+const Result = require('./base/result');
 const Queue = require('../queue');
 const Room = require('../bo/room');
 const AirCon = require('../bo/air-con');
@@ -6,6 +6,9 @@ const DeviceType = require('../enum/device');
 const db = require('../bo/db');
 const AirConCapabilityQueryParam = require('../send/ac-cap-qury-param');
 
+/**
+ * 房间信息
+ */
 class GetRoomInfo extends Result {
   /**
    * @param {Buffer} buf

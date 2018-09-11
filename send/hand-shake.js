@@ -1,6 +1,9 @@
-const SystemParam = require('./system-param');
+const SystemParam = require('./base/system-param');
 const CmdType = require('../enum/cmd-type');
 
+/**
+ * 初始化握手
+ */
 class HandShakeParam extends SystemParam {
 	constructor() {
 		super(CmdType.enum.SYS_HAND_SHAKE, true);

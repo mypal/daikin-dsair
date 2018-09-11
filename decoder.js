@@ -1,6 +1,6 @@
 const CmdType = require('./enum/cmd-type');
 const Device = require('./enum/device');
-const ResultFactory = require('./recv/result-factory');
+const ResultFactory = require('./recv/base/result-factory');
 
 module.exports = function (buf) {
   if (buf.readUInt8(0) !== 2) {

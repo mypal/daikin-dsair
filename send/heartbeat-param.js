@@ -1,3 +1,6 @@
+/**
+ * 心跳请求参数
+ */
 class HeartbeatParam {
 	constructor() {}
     toBuffer() {

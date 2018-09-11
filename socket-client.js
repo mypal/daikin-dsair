@@ -2,15 +2,15 @@ const net = require("net");
 const Decoder = require('./decoder');
 const Queue = require('./queue');
 const Util = require('util');
-// sock is an instance of net.Socket
-var sock = net.connect({ host: '192.168.1.150', port: 8008 }, function() {
-    console.log('server connected');
-    Queue.setCallback(function(param) {
-        let buffer = param.toBuffer();
-        console.log('\x1B[31m', new Date().toLocaleTimeString(), ' send:\x1B[0m');
-        console.log(Util.inspect(param, {showHidden: true, depth: null}));
-        sock.write(buffer);
-    });
+
+let sock = net.connect({host: '192.168.1.150', port: 8008}, function () {
+  console.log('server connected');
+  Queue.setCallback(function (param) {
+    let buffer = param.toBuffer();
+    console.log('\x1B[31m', new Date().toLocaleTimeString(), ' send:\x1B[0m');
+    console.log(Util.inspect(param, {showHidden: true, depth: null}));
+    sock.write(buffer);
+  });
 });
 
 sock.on('data', function(data) {

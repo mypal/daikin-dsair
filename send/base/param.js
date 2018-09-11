@@ -1,5 +1,8 @@
 let cnt = 0;
 
+/**
+ * 基础参数结构
+ */
 class Param {
 	constructor(deviceType, cmdType, hasResult) {
 		this.cmdType = cmdType;

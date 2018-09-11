@@ -1,4 +1,4 @@
-const Result = require('./result');
+const Result = require('./base/result');
 const AirCon = require('../bo/air-con');
 const DeviceType = require('../enum/device');
 const OutDoorRunCond = require('../enum/out-door-run-cond');
@@ -7,6 +7,9 @@ const FanDirection = require('../enum/fan-direction');
 const db = require('../bo/db');
 const Configs = require('../configs');
 
+/**
+ * 空调功能响应结构
+ */
 class AcCapabilityQueryResult extends Result {
   /**
    * @param {Buffer} buf

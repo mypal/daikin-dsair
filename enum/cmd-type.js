@@ -37,7 +37,7 @@ CmdType.enum.SYS_TIME_SYNC = new CmdType(5, 'SYS_TIME_SYNC');
 CmdType.find = function(id) {
 	let map = CmdType.enum;
 	for (let key in map) {
-		if (map[key].id === id) {
+		if (map.hasOwnProperty(key) && map[key].id === id) {
 			return map[key];
 		}
 	}

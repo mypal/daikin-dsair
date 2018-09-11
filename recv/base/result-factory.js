@@ -1,9 +1,9 @@
-const HandShakeResult = require('./hand-shake');
-const GetRoomInfoResult = require('./get-room-info');
-const AcCapabilityQueryResult = require('./ac-cap-qury');
-const AckResult = require('./ack');
+const HandShakeResult = require('../hand-shake');
+const GetRoomInfoResult = require('../get-room-info');
+const AcCapabilityQueryResult = require('../ac-cap-qury');
+const AckResult = require('../ack');
 const Result = require('./result');
-const CmdType = require('../enum/cmd-type');
+const CmdType = require('../../enum/cmd-type');
 
 module.exports = function(cmdType, buffer, opt) {
 	switch (cmdType) {

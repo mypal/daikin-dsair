@@ -1,6 +1,9 @@
-const AirconParam = require('./aircon-param');
+const AirconParam = require('./base/aircon-param');
 const CmdType = require('../enum/cmd-type');
 
+/**
+ * 空调功能请求
+ */
 class AirConCapabilityQueryParam extends AirconParam {
 	constructor() {
 		super(CmdType.enum.AIR_CAPABILITY_QUERY, true);

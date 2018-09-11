@@ -1,6 +1,9 @@
-const SystemParam = require('./system-param');
+const SystemParam = require('./base/system-param');
 const CmdType = require('../enum/cmd-type');
 
+/**
+ * 请求房间信息
+ */
 class GetRoomInfoParam extends SystemParam {
 	constructor() {
 		super(CmdType.enum.SYS_GET_ROOM_INFO, true);

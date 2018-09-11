@@ -1,8 +1,11 @@
-const Result = require('./result');
+const Result = require('./base/result');
 const Queue = require('../queue');
 const GetRoomInfoParam = require('../send/get-room-info');
 const AcRecmdIndTempParam = require('../send/ac-recmd-ind-temp-param');
 
+/**
+ * 握手响应结果
+ */
 class HandShake extends Result {
 	constructor(buffer) {
 		super(buffer);

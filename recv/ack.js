@@ -1,6 +1,9 @@
-const Result = require('./result');
+const Result = require('./base/result');
 const Configs = require('../configs');
 
+/**
+ * 心跳ack
+ */
 class Ack extends Result {
   /**
    * @param {Buffer} buf

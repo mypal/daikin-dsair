@@ -19,7 +19,7 @@ FanVolume.enum.STEP_5 = new FanVolume(5, 'STEP_5');
 FanVolume.find = function(id) {
 	let map = FanVolume.enum;
 	for (let key in map) {
-		if (map[key].id === id) {
+		if (map.hasOwnProperty(key) && map[key].id === id) {
 			return map[key];
 		}
 	}
