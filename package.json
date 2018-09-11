@@ -1,0 +1,23 @@
+{
+  "name": "daikin-dsair",
+  "version": "0.0.1",
+  "description": "hack ds-air of daikin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mypalg/daikin-dsair.git"
+  },
+  "keywords": [
+    "ds-air",
+    "daikin"
+  ],
+  "author": "mypal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mypalg/daikin-dsair/issues"
+  },
+  "homepage": "https://github.com/mypalg/daikin-dsair#readme"
+}
