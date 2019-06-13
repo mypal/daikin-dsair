@@ -6,7 +6,7 @@ const CmdType = require('../enum/cmd-type');
  */
 class AirConQueryStatusParam extends AirconParam {
 	constructor() {
-		super(CmdType.enum.AIR_CAPABILITY_QUERY, true);
+		super(CmdType.enum.QUERY_STATUS, true);
 		this.room = null;
 		this.type = null;
 		this.unit = null;

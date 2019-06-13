@@ -8,5 +8,10 @@ module.exports = {
   setAirCons: (r) => {
     airCons = r
   },
-  getAirCons: () => airCons
+  getAirCons: () => airCons,
+  toString: () => {
+    return JSON.stringify({
+      rooms, airCons
+    }, null, 4);
+  }
 };

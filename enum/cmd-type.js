@@ -12,7 +12,7 @@ CmdType.enum = {};
 CmdType.enum.AIR_CAPABILITY_QUERY = new CmdType(6, 'AIR_CAPABILITY_QUERY');
 CmdType.enum.AIR_RECOMMONEDED_INDOOR_TEMP = new CmdType(4, 'AIR_RECOMMONEDED_INDOOR_TEMP');
 CmdType.enum.AIR_SCENARIO_CONTROL = new CmdType(32, 'AIR_SCENARIO_CONTROL');
-// CmdType.enum.CONTROL = new CmdType(1, 'CONTROL');
+CmdType.enum.CONTROL = new CmdType(1, 'CONTROL');
 CmdType.enum.QUERY_SCENARIO_SETTING = new CmdType(34, 'QUERY_SCENARIO_SETTING');
 CmdType.enum.QUERY_STATUS = new CmdType(3, 'QUERY_STATUS');
 CmdType.enum.SCENARIO_SETTING = new CmdType(33, 'SCENARIO_SETTING');
@@ -36,6 +36,9 @@ CmdType.enum.SYS_SET_BASIC_ROOM_INFO = new CmdType(49, 'SYS_SET_BASIC_ROOM_INFO'
 CmdType.enum.SYS_TIME_SYNC = new CmdType(5, 'SYS_TIME_SYNC');
 CmdType.find = function(id) {
 	let map = CmdType.enum;
+	if (id === 1) {
+		return map.SYS_ACK;
+	}
 	for (let key in map) {
 		if (map.hasOwnProperty(key) && map[key].id === id) {
 			return map[key];
