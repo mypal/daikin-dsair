@@ -3,7 +3,7 @@ const Decoder = require('./decoder');
 const Queue = require('./queue');
 const Util = require('util');
 
-let sock = net.connect({host: '192.168.1.150', port: 8008}, function () {
+let sock = net.connect({host: '192.168.1.110', port: 8008}, function () {
   console.log('server connected');
   Queue.setCallback(function (param) {
     let buffer = param.toBuffer();

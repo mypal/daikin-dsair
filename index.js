@@ -20,18 +20,18 @@ setTimeout(() => {
   Queue.push(acQuryStat);
 }, 500);
 
-const AcControlParam = require('./send/ac-ctrl');
-const Ctrl = require('./enum/control');
-setTimeout(() => {
-  let acCtrl = new AcControlParam();
-  acCtrl.room = 6;
-  acCtrl.unit = 0;
-  acCtrl.switch = Ctrl.Switch.enum.ON;
-  acCtrl.mode = Ctrl.Mode.enum.HEAT;
-  acCtrl.airFlow = Ctrl.AirFlow.enum.WEAK;
-  acCtrl.settedTemp = 30;
-  acCtrl.fanDir1 = Ctrl.FanDirection.enum.P4;
-  acCtrl.fanDir2 = Ctrl.FanDirection.enum.P4;
-  // acCtrl.humidity = Ctrl.Humidity.enum.STEP2;
-  Queue.push(acCtrl);
-}, 800);
+// const AcControlParam = require('./send/ac-ctrl');
+// const Ctrl = require('./enum/control');
+// setTimeout(() => {
+//   let acCtrl = new AcControlParam();
+//   acCtrl.room = 6;
+//   acCtrl.unit = 0;
+//   acCtrl.switch = Ctrl.Switch.enum.ON;
+//   acCtrl.mode = Ctrl.Mode.enum.HEAT;
+//   acCtrl.airFlow = Ctrl.AirFlow.enum.WEAK;
+//   acCtrl.settedTemp = 30;
+//   acCtrl.fanDir1 = Ctrl.FanDirection.enum.P4;
+//   acCtrl.fanDir2 = Ctrl.FanDirection.enum.P4;
+//   // acCtrl.humidity = Ctrl.Humidity.enum.STEP2;
+//   Queue.push(acCtrl);
+// }, 800);
